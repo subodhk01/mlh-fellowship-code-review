@@ -1,0 +1,15 @@
+{
+    "hosting": {
+        "site": "nestin",
+        "public": "src/public",
+        "rewrites": [
+            {
+                "source": "**/**",
+                "function": "webapp"
+            }
+        ]
+    },
+    "functions": {
+        "source": "src/functions"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "nestin-web",
+    "version": "1.0.0",
+    "description": "NestIn Web App",
+    "repository": "https://github.com/appnestin/nestin-web",
+    "scripts": {
+        "install": "npm run build-all",
+        "next": "npm run build-firebase && cd \"src/app\" && npm install && npm run dev",
+        "preserve": "npm run build-all",
+        "serve": "firebase serve",
+        "predeploy": "npm run build-all",
+        "deploy": "firebase deploy",
+        "build-all": "npm run build-next && npm run build-firebase",
+        "build-next": "cd \"src/app\" && npm install && npm run build",
+        "build-firebase": "cd \"src/functions\" && npm install"
+    }
+}
